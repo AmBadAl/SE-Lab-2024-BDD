@@ -1,5 +1,6 @@
 # SE-Lab-2024-BDD
 
+در این آزمایش نوشتن سناریو و تست با استفاده از ابزار Cucumber و زبان Gherkin را فرا گرفتیم. ابتدا یک پروژه Maven و با dependencyهای مورد نیاز برای Cucumber راه‌اندازی کردیم.
 در فایل calculator.feature تعدادی سناریو به زبان Gherkin نوشتیم. سناریوی زیر را در نظر بگیرید که تست مربوطه پاس می‌شود:
 ```
 Feature: Calculator Operations
