@@ -4,15 +4,15 @@
 
 Feature: Calculator Operations
 
-  # Normal Scenarios for basic operations
-  Scenario: add two numbers
+  \# Normal Scenarios for basic operations\\
+  Scenario: add two numbers\\
     Given Two input values, 1 and 2
     When I add the two values
     Then I expect the result 3
 
 در انتهای فایل scenario outline را مشخص می‌کنیم و تعدادی example برای اتوماتیک کردن تست می‌نویسیم:
 
-  # Scenario Outline for variable operations
+  \# Scenario Outline for variable operations
   Scenario Outline: perform arithmetic operations with different data
     Given Two input values, <first> and <second>
     And I have selected the operation <opt>
