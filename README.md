@@ -11,15 +11,15 @@ Feature: Calculator Operations
     Then I expect the result 3<br />
 
 در انتهای فایل scenario outline را مشخص می‌کنیم و تعدادی example برای اتوماتیک کردن تست می‌نویسیم:
-
-  \# Scenario Outline for variable operations<br />
+```
+  # Scenario Outline for variable operations<br />
   Scenario Outline: perform arithmetic operations with different data<br />
     Given Two input values, <first> and <second><br />
     And I have selected the operation <opt><br />
-    When I perform the operation<br />
-    Then I expect the result <result><br />
+    When I perform the operation
+    Then I expect the result <result>
 
-    Examples:<br />
+    Examples:
       | first | second | opt | result |
       | 1     | 12     | +   | 13     |
       | -1    | 6      | +   | 5      |
@@ -29,6 +29,7 @@ Feature: Calculator Operations
       | 6     | 2      | /   | 3      |
       | -6     | 2      | /   | -3      |
       | 6     | 2      | ^   | 36     |
+```
 
 
 
