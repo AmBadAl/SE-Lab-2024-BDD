@@ -4,8 +4,8 @@
 
 Feature: Calculator Operations
 
-  \# Normal Scenarios for basic operations\\
-  Scenario: add two numbers\\
+  \# Normal Scenarios for basic operations<br />
+  Scenario: add two numbers<br />
     Given Two input values, 1 and 2
     When I add the two values
     Then I expect the result 3
