@@ -1,21 +1,22 @@
 # SE-Lab-2024-BDD
 
 در فایل calculator.feature تعدادی سناریو به زبان Gherkin نوشتیم. سناریوی زیر را در نظر بگیرید که تست مربوطه پاس می‌شود:
-
+```
 Feature: Calculator Operations
 
-  \# Normal Scenarios for basic operations<br />
-  Scenario: add two numbers<br />
-    Given Two input values, 1 and 2<br />
-    When I add the two values<br />
-    Then I expect the result 3<br />
+  # Normal Scenarios for basic operations
+  Scenario: add two numbers
+    Given Two input values, 1 and 2
+    When I add the two values
+    Then I expect the result 3
+```
 
 در انتهای فایل scenario outline را مشخص می‌کنیم و تعدادی example برای اتوماتیک کردن تست می‌نویسیم:
 ```
-  # Scenario Outline for variable operations<br />
-  Scenario Outline: perform arithmetic operations with different data<br />
-    Given Two input values, <first> and <second><br />
-    And I have selected the operation <opt><br />
+  # Scenario Outline for variable operations
+  Scenario Outline: perform arithmetic operations with different data
+    Given Two input values, <first> and <second>
+    And I have selected the operation <opt>
     When I perform the operation
     Then I expect the result <result>
 
